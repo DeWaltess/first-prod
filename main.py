@@ -1,6 +1,15 @@
-from django.db import models
+import time
+num1 = int(input("Введите первое число: "))
 
+num2 = int(input("Введите второе число: "))
 
-class Person(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+if num1 < 5:
+    print ("Пошел нахуй отсюда")
+    exit()
+elif num2 < 5:
+    print ("Пошел нахуй отсюда")
+    exit()
+else:
+    print ("Хорошая работа, Олег")
+
+time.sleep(2.5)
